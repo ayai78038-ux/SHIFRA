@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إنشاء حساب | شِفرة</title>
+</head>
+<body>
+  <header>
+    <a href="index.html"><h1>SHIFRA | شِفرة</h1></a>
+    <p>أنشئ حسابك وابدأ رحلة اكتشاف جديدة.</p>
+    <nav aria-label="القائمة الرئيسية">
+      <a href="index.html">الرئيسية</a>
+      <a href="discover.html">اكتشف نفسك</a>
+      <a href="about.html">من نحن</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>إنشاء حساب جديد</h2>
+      <p>املأ البيانات التالية للانضمام إلى منصة شِفرة.</p>
+      <form action="#" method="post">
+        <div>
+          <label for="full-name">الاسم الكامل</label>
+          <input type="text" id="full-name" name="full_name" placeholder="اكتب اسمك الكامل" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="email">البريد الإلكتروني</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="password">كلمة المرور</label>
+          <input type="password" id="password" name="password" placeholder="أنشئ كلمة مرور" autocomplete="new-password" minlength="8" required>
+        </div>
+        <div>
+          <label for="confirm-password">تأكيد كلمة المرور</label>
+          <input type="password" id="confirm-password" name="confirm_password" placeholder="أعد كتابة كلمة المرور" autocomplete="new-password" minlength="8" required>
+        </div>
+        <div>
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">أوافق على استخدام بياناتي لأغراض تشغيل المنصة.</label>
+        </div>
+        <button type="submit">إنشاء الحساب</button>
+      </form>
+      <p>لديك حساب بالفعل؟ <a href="login.html">سجّل الدخول</a></p>
+    </section>
+  </main>
+  <footer><p>SHIFRA | شِفرة - اكتشف وجهتك في عالم الابتكار الرقمي</p></footer>
+</body>
+</html>
