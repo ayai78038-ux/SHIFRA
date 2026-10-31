@@ -16,7 +16,7 @@ header>p a{display:inline-block;margin:5px 4px;padding:8px 17px;border:1px solid
 main{width:min(1120px,calc(100% - 36px));margin:34px auto 60px}
 section{position:relative;overflow:hidden;margin:22px 0;padding:clamp(24px,5vw,48px);border:1px solid var(--border);border-radius:26px;background:linear-gradient(145deg,rgba(24,30,65,.91),rgba(13,18,42,.88));box-shadow:var(--shadow)}
 section:before{content:"";position:absolute;width:210px;height:210px;top:-125px;left:-90px;border-radius:50%;background:rgba(112,91,255,.13);filter:blur(8px);pointer-events:none}
-main>section:first-child{background:linear-gradient(145deg,rgba(24,30,65,.91),rgba(13,18,42,.88));min-height:240px}body:has(header>p a[href="register.html"]) main>section:first-child{background:linear-gradient(110deg,rgba(8,12,31,.94),rgba(23,24,64,.78)),url("assets/images/hero.jpg") center/cover no-repeat;min-height:340px;display:flex;flex-direction:column;justify-content:center}
+main>section:first-child{background:linear-gradient(145deg,rgba(24,30,65,.91),rgba(13,18,42,.88));min-height:240px}body:has(header>p a[href="register.html"]) main>section:first-child{background:linear-gradient(110deg,rgba(8,12,31,.94),rgba(23,24,64,.78)),url("images/hero.jpg") center/cover no-repeat;min-height:340px;display:flex;flex-direction:column;justify-content:center}
 h2{position:relative;margin:0 0 14px;color:#fff;font-size:clamp(1.45rem,3vw,2.15rem);line-height:1.5}
 h2:after{content:"";display:block;width:64px;height:4px;margin-top:12px;border-radius:9px;background:linear-gradient(90deg,var(--purple),var(--blue))}
 h3{color:#d9d0ff;margin:0 0 8px;font-size:1.2rem}
