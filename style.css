@@ -43,7 +43,7 @@ footer p{margin:4px 0;font-size:.92rem}
 /* صورة صفحة اكتشف نفسك */
 body.page-discover main > section:first-child {
     background-image:
-        linear-gradient(rgba(10, 8, 30, 0.55), rgba(10, 8, 30, 0.75)),
+        linear-gradient(rgba(10, 8, 30, 0.30), rgba(10, 8, 30, 0.45)),
         url("images/discover.jpg");
 
     background-size: cover;
@@ -53,7 +53,7 @@ body.page-discover main > section:first-child {
 /* صورة صفحة أسلوب تعلمك */
 body.page-learning main > section:first-child {
     background-image:
-        linear-gradient(rgba(10, 8, 30, 0.55), rgba(10, 8, 30, 0.75)),
+        linear-gradient(rgba(10, 8, 30, 0.30), rgba(10, 8, 30, 0.45)),
         url("images/learning.jpg");
     background-size: cover;
     background-position: center;
@@ -62,7 +62,7 @@ body.page-learning main > section:first-child {
 /* صورة صفحة من نحن */
 body.page-about main > section:first-child {
     background-image:
-        linear-gradient(rgba(10, 8, 30, 0.55), rgba(10, 8, 30, 0.75)),
+        linear-gradient(rgba(10, 8, 30, 0.30), rgba(10, 8, 30, 0.45)),
         url("images/about.jpg");
     background-size: cover;
     background-position: center;
@@ -71,7 +71,7 @@ body.page-about main > section:first-child {
 /* صورة الصفحة الرئيسية */
 body.page-home main > section:first-child {
     background-image:
-        linear-gradient(rgba(10, 8, 30, 0.45), rgba(10, 8, 30, 0.70)),
+        linear-gradient(rgba(10, 8, 30, 0.40), rgba(10, 8, 30, 0.60)),
         url("images/hero.jpg");
     background-size: cover;
     background-position: center;
