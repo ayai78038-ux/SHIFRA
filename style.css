@@ -70,10 +70,12 @@ body.page-about main > section:first-child {
 }
 /* صورة الصفحة الرئيسية */
 body.page-home main > section:first-child {
-    background-image:
-        linear-gradient(rgba(10, 8, 30, 0.40), rgba(10, 8, 30, 0.65)),
-        url("images/hero.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background:
+        linear-gradient(rgba(10, 8, 30, 0.25), rgba(10, 8, 30, 0.40)),
+        url("images/hero.jpg") center center / cover no-repeat;
+
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
