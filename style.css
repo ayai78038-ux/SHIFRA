@@ -1,0 +1,79 @@
+/* SHIFRA | شِفرة - CSS Stage */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#080b1b;--text:#f5f6ff;--muted:#b7bfdc;--purple:#9b7bff;--blue:#54c8ff;--border:rgba(167,157,255,.22);--shadow:0 22px 60px rgba(0,0,0,.32)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:"Cairo",Tahoma,Arial,sans-serif;color:var(--text);line-height:1.9;background:radial-gradient(circle at 12% 12%,rgba(110,76,220,.22),transparent 28rem),radial-gradient(circle at 88% 30%,rgba(34,159,220,.16),transparent 30rem),linear-gradient(135deg,#080b1b 0%,#10132b 52%,#090d20 100%);background-attachment:fixed}
+a{color:var(--blue);text-decoration:none;transition:.25s}a:hover{color:#d8caff}
+header{width:min(1120px,calc(100% - 36px));margin:24px auto 0;padding:22px 28px;border:1px solid var(--border);border-radius:24px;background:rgba(13,17,39,.78);box-shadow:var(--shadow);backdrop-filter:blur(16px)}
+header>a:first-child{color:var(--text);display:inline-block}
+header h1{margin:0;font-size:clamp(1.7rem,4vw,2.45rem);font-weight:900;letter-spacing:1px;background:linear-gradient(90deg,#fff,#b99cff 48%,#62d4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+header>p{color:var(--muted);margin:4px 0 14px}
+nav{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:16px}
+nav a{display:inline-block;padding:8px 16px;color:#e8eaff;border:1px solid transparent;border-radius:999px;background:rgba(255,255,255,.045);font-size:.94rem}
+nav a:hover{color:white;border-color:var(--border);background:rgba(155,123,255,.18);transform:translateY(-2px)}
+header>p a{display:inline-block;margin:5px 4px;padding:8px 17px;border:1px solid var(--border);border-radius:999px;background:rgba(155,123,255,.12)}
+main{width:min(1120px,calc(100% - 36px));margin:34px auto 60px}
+section{position:relative;overflow:hidden;margin:22px 0;padding:clamp(24px,5vw,48px);border:1px solid var(--border);border-radius:26px;background:linear-gradient(145deg,rgba(24,30,65,.91),rgba(13,18,42,.88));box-shadow:var(--shadow)}
+section:before{content:"";position:absolute;width:210px;height:210px;top:-125px;left:-90px;border-radius:50%;background:rgba(112,91,255,.13);filter:blur(8px);pointer-events:none}
+main>section:first-child{background:linear-gradient(145deg,rgba(24,30,65,.91),rgba(13,18,42,.88));min-height:240px}body:has(header>p a[href="register.html"]) main>section:first-child{background:linear-gradient(110deg,rgba(8,12,31,.94),rgba(23,24,64,.78)),url("assets/images/hero.jpg") center/cover no-repeat;min-height:340px;display:flex;flex-direction:column;justify-content:center}
+h2{position:relative;margin:0 0 14px;color:#fff;font-size:clamp(1.45rem,3vw,2.15rem);line-height:1.5}
+h2:after{content:"";display:block;width:64px;height:4px;margin-top:12px;border-radius:9px;background:linear-gradient(90deg,var(--purple),var(--blue))}
+h3{color:#d9d0ff;margin:0 0 8px;font-size:1.2rem}
+p{color:var(--muted);margin:10px 0 18px}
+main>section>a,button{display:inline-block;margin:12px 5px 4px 0;padding:12px 25px;border:0;border-radius:14px;color:#090d20;background:linear-gradient(100deg,#b39aff,#66d8ff);font-family:inherit;font-size:1rem;font-weight:800;cursor:pointer;box-shadow:0 9px 25px rgba(103,151,255,.2);transition:transform .25s,box-shadow .25s,filter .25s}
+main>section>a:hover,button:hover{color:#090d20;transform:translateY(-3px);filter:brightness(1.08);box-shadow:0 14px 30px rgba(103,151,255,.3)}
+article{display:inline-block;vertical-align:top;width:calc(33.333% - 14px);min-width:220px;min-height:155px;margin:12px 5px;padding:22px;border:1px solid var(--border);border-radius:20px;background:linear-gradient(145deg,rgba(155,123,255,.12),rgba(84,200,255,.055));transition:transform .25s,border-color .25s}
+article:hover{transform:translateY(-5px);border-color:rgba(84,200,255,.55)}
+form{max-width:720px;margin-top:22px}form>div{margin:16px 0}
+label,legend{color:#e7e9ff;font-weight:700}
+input:not([type=radio]):not([type=checkbox]),textarea,select{display:block;width:100%;margin-top:7px;padding:13px 15px;border:1px solid rgba(166,171,226,.25);border-radius:13px;outline:none;color:var(--text);background:rgba(5,9,27,.72);font:inherit;transition:border-color .2s,box-shadow .2s}
+input:focus,textarea:focus,select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(84,200,255,.12)}
+input::placeholder,textarea::placeholder{color:#818bad}
+input[type=radio],input[type=checkbox]{accent-color:#9b7bff;width:17px;height:17px;vertical-align:middle;margin:0 0 0 8px}
+fieldset{margin:20px 0;padding:20px;border:1px solid var(--border);border-radius:18px;background:rgba(5,9,27,.34)}
+legend{padding:0 10px;color:#cdbdff}
+fieldset label{display:block;padding:8px 10px;margin:5px 0;border-radius:10px;font-weight:500}
+fieldset label:hover{background:rgba(155,123,255,.1)}
+form button{margin-top:12px}
+ol,ul{padding-right:24px;color:var(--muted)}li{padding:7px 0}strong{color:#e4dcff}
+footer{width:min(1120px,calc(100% - 36px));margin:0 auto 24px;padding:22px;text-align:center;border:1px solid var(--border);border-radius:20px;background:rgba(13,17,39,.75)}
+footer p{margin:4px 0;font-size:.92rem}
+@media(max-width:700px){header{padding:18px;margin-top:12px;border-radius:19px}nav{gap:7px}nav a{padding:7px 12px;font-size:.88rem}main{margin-top:20px}section{padding:24px 19px;border-radius:20px}main>section:first-child{min-height:260px}article{display:block;width:100%;min-width:0;margin:12px 0}footer{padding:18px}}
+/* صورة صفحة اكتشف نفسك */
+body.page-discover main > section:first-child {
+    background-image:
+        linear-gradient(rgba(10, 8, 30, 0.50), rgba(10, 8, 30, 0.70)),
+        url("images/discover.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* صورة صفحة أسلوب تعلمك */
+body.page-learning main > section:first-child {
+    background-image:
+        linear-gradient(rgba(10, 8, 30, 0.50), rgba(10, 8, 30, 0.70)),
+        url("images/learning.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* صورة صفحة من نحن */
+body.page-about main > section:first-child {
+    background-image:
+        linear-gradient(rgba(10, 8, 30, 0.50), rgba(10, 8, 30, 0.70)),
+        url("images/about.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* صورة الصفحة الرئيسية */
+body.page-home main > section:first-child {
+    background-image:
+        linear-gradient(rgba(10, 8, 30, 0.40), rgba(10, 8, 30, 0.65)),
+        url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
